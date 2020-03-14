@@ -3,35 +3,42 @@ class SchanaAdminOmniTool extends ToolBase
     override void SetActions()
     {
         super.SetActions();
-        AddAction(ActionDismantlePart);
-        AddAction(ActionExtinguishFireplaceByExtinguisher);
-        AddAction(ActionUnrestrainTarget);
-        AddAction(ActionMineBush);
-        AddAction(ActionSawPlanks);
-        AddAction(ActionDestroyPart);
-        AddAction(ActionSkinning);
+
+        AddAction(ActionBuildPartSwitch);
         AddAction(ActionBuildPart);
+        AddAction(ActionDismantlePart);
+        AddAction(ActionDestroyPart);
+
         AddAction(ActionLockDoors);
         AddAction(ActionUnlockDoors);
-        AddAction(ActionClapBearTrapWithThisItem);
-        AddAction(ActionSewTarget);
-        AddAction(ActionSewSelf);
-        AddAction(ActionGiveSalineTarget);
-        AddAction(ActionDestroyCombinationLock);
+        AddAction(ActionUnrestrainTarget);
+
         AddAction(ActionMineRock1H);
-        AddAction(ActionLightItemOnFire);
         AddAction(ActionMineRock);
+        AddAction(ActionMineBush);
+        AddAction(ActionMineTree);
+        AddAction(ActionSawPlanks);
         AddAction(ActionUnmountBarbedWire);
-        AddAction(ActionBuildPartSwitch);
+        AddAction(ActionDestroyCombinationLock);
+        
         AddAction(ActionBandageTarget);
+        AddAction(ActionGiveSalineTarget);
         AddAction(ActionBurnSewTarget);
 		AddAction(ActionBurnSewSelf);
+        AddAction(ActionSewTarget);
+        AddAction(ActionSewSelf);
+
 		AddAction(ActionBuryBody);
 		AddAction(ActionBuryAshes);
 		AddAction(ActionDigOutStash);
 		AddAction(ActionDigInStash);
 		AddAction(ActionFillObject);
+
+        AddAction(ActionSkinning);
 		AddAction(ActionDigWorms);
+        AddAction(ActionClapBearTrapWithThisItem);
+        AddAction(ActionLightItemOnFire);
+        AddAction(ActionExtinguishFireplaceByExtinguisher);
     }
 
     override bool IsMeleeFinisher()
