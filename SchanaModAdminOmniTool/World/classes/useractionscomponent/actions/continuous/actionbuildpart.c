@@ -6,6 +6,6 @@ modded class ActionBuildPartCB
         {
             return 0.2;
         }
-        return super.SetBuildingDuraction(item);
+        return super.SetBuildingDuration(item);
 	}
 }

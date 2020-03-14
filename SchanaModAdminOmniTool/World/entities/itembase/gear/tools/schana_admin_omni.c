@@ -39,7 +39,7 @@ class SchanaAdminOmniTool extends ToolBase
         return true;
     }
 
-    override void DecreaseHealth(string zoneName, string healthType, float value)
+    override void DecreaseHealth(string zoneName, string healthType, float value, bool auto_delete)
     {
 
     }
