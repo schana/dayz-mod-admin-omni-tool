@@ -2,6 +2,7 @@ class SchanaAdminOmniTool extends ToolBase
 {
     override void SetActions()
     {
+        SetAllowDamage(false);
         super.SetActions();
 
         AddAction(ActionBuildPartSwitch);
@@ -46,8 +47,10 @@ class SchanaAdminOmniTool extends ToolBase
         return true;
     }
 
-    override void DecreaseHealth(string zoneName, string healthType, float value, bool auto_delete)
+    override void OnInventoryExit(Man player)
     {
-
+        super.OnInventoryExit(player);
+        Delete();
+        DeleteOnClient();
     }
 }
