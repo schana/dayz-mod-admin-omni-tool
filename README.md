@@ -4,7 +4,7 @@
 
 <https://steamcommunity.com/sharedfiles/filedetails/?id=2022600094>
 
-An Open Source DayZ mod that provides a tools for admins to use for nearly anything. It never wears out and all actions have been sped up considerably. Simply spawn in "Schana_AdminOmniTool" for your admins and enjoy the results.
+An Open Source DayZ mod that provides a tools for admins to use for nearly anything. It never wears out and all actions have been sped up considerably. Simply spawn in "SchanaAdminOmniTool" for your admins and enjoy the results.
 
 ## Features
 

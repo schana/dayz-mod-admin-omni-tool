@@ -28,24 +28,26 @@ class CfgVehicles
 	class Wrench;
 	class SchanaAdminOmniTool: Wrench
 	{
-		displayName = "Schana_AdminOmniTool";
-		descriptionShort = "tool for admins to use for nearly anything";
+		displayName = "SchanaAdminOmniTool";
+		descriptionShort = "Tool for admins to use for nearly anything";
+		animClass="Knife";
+		repairKitType = 5;
 		class MeleeModes
 		{
 			class Default
 			{
 				ammo="MeleeSchanaAdminOmniTool";
-				range=1.1;
+				range=6.0;
 			};
 			class Heavy
 			{
 				ammo="MeleeSchanaAdminOmniTool";
-				range=1.1;
+				range=6.0;
 			};
 			class Sprint
 			{
 				ammo="MeleeSchanaAdminOmniTool";
-				range=3.3;
+				range=8.0;
 			};
 		};
 	};
@@ -61,7 +63,7 @@ class CfgAmmo
 			type="Melee";
 			class Health
 			{
-				damage=150;
+				damage=500;
 			};
 			class Blood
 			{

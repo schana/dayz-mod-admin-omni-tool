@@ -2,7 +2,6 @@ class SchanaAdminOmniTool extends ToolBase
 {
     override void SetActions()
     {
-        SetAllowDamage(false);
         super.SetActions();
 
         AddAction(ActionBuildPartSwitch);
@@ -29,8 +28,8 @@ class SchanaAdminOmniTool extends ToolBase
         AddAction(ActionSewTarget);
         AddAction(ActionSewSelf);
 
-		AddAction(ActionBuryBody);
-		AddAction(ActionBuryAshes);
+		//AddAction(ActionBuryBody);
+		//AddAction(ActionBuryAshes);
 		AddAction(ActionDigOutStash);
 		AddAction(ActionDigInStash);
 		AddAction(ActionFillObject);
@@ -40,6 +39,12 @@ class SchanaAdminOmniTool extends ToolBase
         AddAction(ActionClapBearTrapWithThisItem);
         AddAction(ActionLightItemOnFire);
         AddAction(ActionExtinguishFireplaceByExtinguisher);
+    }
+
+    override bool OnAction(int action_id, Man player, ParamsReadContext ctx)
+    {
+        this.SetHealth("", "", GetMaxHealth());
+        return super.OnAction(action_id, player, ctx);
     }
 
     override bool IsMeleeFinisher()

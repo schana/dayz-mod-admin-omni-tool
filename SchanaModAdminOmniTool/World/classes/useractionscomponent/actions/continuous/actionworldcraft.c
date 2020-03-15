@@ -8,7 +8,7 @@ modded class ActionWorldCraftCB
         }
         else
         {
-            m_ActionData.m_ActionComponent = new CAContinuousTime( UATimeSpent.DEFAULT_CRAFT );
+            super.CreateActionComponent();
         }
 	}
 };
