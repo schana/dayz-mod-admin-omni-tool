@@ -2,7 +2,7 @@ modded class PluginRepairing extends PluginBase
 {
     override bool Repair( PlayerBase player, ItemBase repair_kit, ItemBase item, float specialty_weight )
 	{
-        if (kit.Type() == SchanaAdminOmniTool)
+        if (repair_kit.Type() == SchanaAdminOmniTool)
         {
             item.SetHealth("", "", item.GetMaxHealth("", ""));
             return true;
@@ -15,7 +15,7 @@ modded class PluginRepairing extends PluginBase
 
     override bool CanRepair( ItemBase repair_kit, ItemBase item )
     {
-        if (kit.Type() == SchanaAdminOmniTool)
+        if (repair_kit.Type() == SchanaAdminOmniTool)
         {
             if ( item.GetHealthLevel() < WORN_STATE )
             {
