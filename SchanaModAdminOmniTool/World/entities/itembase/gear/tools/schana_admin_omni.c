@@ -58,4 +58,9 @@ class SchanaAdminOmniTool extends ToolBase
         Delete();
         DeleteOnClient();
     }
+
+    override void DecreaseHealth(string zoneName, string healthType, float value, bool auto_delete)
+    {
+        
+    }
 }

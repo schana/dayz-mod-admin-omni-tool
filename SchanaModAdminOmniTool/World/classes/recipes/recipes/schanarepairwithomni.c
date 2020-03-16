@@ -15,7 +15,7 @@ class SchanaRepairWithOmni extends RecipeBase
 		m_MinQuantityIngredient[0] = -1;//-1 = disable check
 		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
 		
-		m_MinDamageIngredient[1] = -1;//-1 = disable check
+		m_MinDamageIngredient[1] = 1;//-1 = disable check
 		m_MaxDamageIngredient[1] = -1;//-1 = disable check
 		
 		m_MinQuantityIngredient[1] = -1;//-1 = disable check
@@ -72,5 +72,10 @@ class SchanaRepairWithOmni extends RecipeBase
 		ItemBase ingredient2;
 		Class.CastTo(ingredient2, ingredients[1]);
 		module_repairing.Repair(playerPB, ingredient1,ingredient2,m_Specialty);
+	}
+
+	override bool CanDo(ItemBase ingredients[], PlayerBase player)
+	{
+		return true;
 	}
 };

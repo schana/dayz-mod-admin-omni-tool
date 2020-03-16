@@ -4,7 +4,7 @@ modded class ActionMineTreeCB
 	{
         if(m_ActionData.m_MainItem.Type() == SchanaAdminOmniTool)
         {
-            m_ActionData.m_ActionComponent = new CAContinuousMineWood( 0.2 );
+            m_ActionData.m_ActionComponent = new CAContinuousMineWood( 0.01 );
         }
         else
         {
