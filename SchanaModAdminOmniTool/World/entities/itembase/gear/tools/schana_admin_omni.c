@@ -13,8 +13,6 @@ class SchanaAdminOmniTool extends ToolBase
         AddAction(ActionUnlockDoors);
         AddAction(ActionUnrestrainTarget);
 
-        AddAction(ActionMineRock1H);
-        AddAction(ActionMineRock);
         AddAction(ActionMineBush);
         AddAction(ActionMineTree);
         AddAction(ActionSawPlanks);
@@ -28,8 +26,6 @@ class SchanaAdminOmniTool extends ToolBase
         AddAction(ActionSewTarget);
         AddAction(ActionSewSelf);
 
-		//AddAction(ActionBuryBody);
-		//AddAction(ActionBuryAshes);
 		AddAction(ActionDigOutStash);
 		AddAction(ActionDigInStash);
 		AddAction(ActionFillObject);
@@ -39,12 +35,6 @@ class SchanaAdminOmniTool extends ToolBase
         AddAction(ActionClapBearTrapWithThisItem);
         AddAction(ActionLightItemOnFire);
         AddAction(ActionExtinguishFireplaceByExtinguisher);
-    }
-
-    override bool OnAction(int action_id, Man player, ParamsReadContext ctx)
-    {
-        this.SetHealth("", "", GetMaxHealth());
-        return super.OnAction(action_id, player, ctx);
     }
 
     override bool IsMeleeFinisher()
@@ -57,5 +47,10 @@ class SchanaAdminOmniTool extends ToolBase
         super.OnInventoryExit(player);
         Delete();
         DeleteOnClient();
+    }
+
+    override void DecreaseHealth(string zoneName, string healthType, float value, bool auto_delete)
+    {
+        
     }
 }

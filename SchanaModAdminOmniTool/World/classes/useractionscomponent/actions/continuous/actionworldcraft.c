@@ -4,7 +4,7 @@ modded class ActionWorldCraftCB
 	{
         if(m_ActionData.m_MainItem.Type() == SchanaAdminOmniTool)
         {
-            m_ActionData.m_ActionComponent = new CAContinuousTime( 0.01 );
+            m_ActionData.m_ActionComponent = new CAContinuousCraft( 0.01 );
         }
         else
         {
