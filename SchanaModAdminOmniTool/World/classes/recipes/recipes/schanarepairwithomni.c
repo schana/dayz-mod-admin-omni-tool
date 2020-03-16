@@ -1,10 +1,10 @@
-class SchanaRepairWithOmni extends RecipeBase
+class SchanaRepairWithOmni extends RepairWithTape
 {	
 	override void Init()
 	{
 		m_Name = "#repair";
-		m_IsInstaRecipe = true;//should this recipe be performed instantly without animation
-		m_AnimationLength = 0;//animation length in relative time units
+		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
+		m_AnimationLength = 0.2;//animation length in relative time units
 		m_Specialty = 0.03;// value > 0 for roughness, value < 0 for precision
 		
 		
@@ -63,15 +63,9 @@ class SchanaRepairWithOmni extends RecipeBase
 
 	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)//gets called upon recipe's completion
 	{
-		PluginRepairing module_repairing;
-		Class.CastTo(module_repairing, GetPlugin(PluginRepairing));
-		PlayerBase playerPB;
-		Class.CastTo(playerPB, player);
-		ItemBase ingredient1;
-		Class.CastTo(ingredient1, ingredients[0]);
 		ItemBase ingredient2;
 		Class.CastTo(ingredient2, ingredients[1]);
-		module_repairing.Repair(playerPB, ingredient1,ingredient2,m_Specialty);
+		ingredient2.SetHealth("", "", ingredient2.GetMaxHealth("", ""));
 	}
 
 	override bool CanDo(ItemBase ingredients[], PlayerBase player)

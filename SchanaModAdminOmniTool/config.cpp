@@ -4,6 +4,8 @@ class CfgPatches
 	{
 		requiredAddons[] = 
 		{
+			"DZ_Data",
+			"DZ_Weapons_Melee",
 			"DZ_Gear_Tools"
 		};
 	};
@@ -64,8 +66,8 @@ class CfgVehicles
 
 class CfgAmmo
 {
-	class MeleeDamage;
-	class MeleeSchanaAdminOmniTool: MeleeDamage
+	class MeleeKnife;
+	class MeleeSchanaAdminOmniTool: MeleeKnife
 	{
 		class DamageApplied
 		{
