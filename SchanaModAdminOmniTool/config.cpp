@@ -2,7 +2,10 @@ class CfgPatches
 {
 	class SchanaModAdminOmniTool
 	{
-		requiredAddons[] = {};
+		requiredAddons[] = 
+		{
+			"DZ_Gear_Tools"
+		};
 	};
 };
 
@@ -28,10 +31,16 @@ class CfgVehicles
 	class Wrench;
 	class SchanaAdminOmniTool: Wrench
 	{
-		displayName = "SchanaAdminOmniTool";
-		descriptionShort = "Tool for admins to use for nearly anything";
+		scope=2;
+		displayName="SchanaAdminOmniTool";
+		descriptionShort="Tool for admins to use for nearly anything";
 		animClass="Knife";
-		repairKitType = 5;
+		repairKitType=5;
+		isMeleeWeapon=1;
+		canSkinBodies=1;
+		RestrainUnlockType=0;
+		itemSize[]={1,1};
+		weight=1;
 		class MeleeModes
 		{
 			class Default
