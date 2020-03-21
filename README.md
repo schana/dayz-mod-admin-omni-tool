@@ -18,11 +18,7 @@ An Open Source DayZ mod that provides a tool for admins to use for nearly anythi
   * Fill
   * Skinning
   * Light item on fire
-  * Extinguish
 * Build
   * Doesn't require materials
 * Destroy
 * Dismantle
-* Heal
-  * Bandage
-  * Saline
