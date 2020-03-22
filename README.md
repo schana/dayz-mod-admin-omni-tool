@@ -11,13 +11,7 @@ An Open Source DayZ mod that provides a tool for admins to use for nearly anythi
 * Tool
   * Lock / Unlock doors
   * Unrestrain
-  * Mine tree
-  * Saw
-  * Dig
-  * Bury
-  * Fill
   * Skinning
-  * Light item on fire
 * Build
   * Doesn't require materials
 * Destroy
