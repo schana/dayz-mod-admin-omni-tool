@@ -1,0 +1,22 @@
+[h1]SchanaModAdminOmniTool[/h1]
+
+An Open Source DayZ mod that provides a tool for admins to use for nearly anything. It never wears out and most actions have been sped up considerably. Simply spawn in "SchanaAdminOmniTool" for your admins and enjoy the results.
+
+[b]Features[/b]
+
+Use as a tool
+  * Lock / Unlock doors
+  * Unrestrain
+  * Skinning
+
+Use to build, dismantle, and destroy
+  * Doesn't require materials
+
+Please submit bugs on the GitHub [url=https://github.com/schana/dayz-mod-admin-omni-tool/issues]issue tracker[/url]. There you will also find known issues.
+
+You are free to use this mod on your monetized servers. If you repack or use the code in a Derivative Work, you [b]must[/b] include the entire contents of the NOTICE file in a readable place in accordance with the Apache License.
+
+This mod originated from the Carim DayZ project
+The original source is at https://github.com/schana/dayz-mod-admin-omni-tool
+To support this open source project, you can donate at https://paypal.me/cnofafva
+To learn more visit https://discord.gg/kdPnVu4
